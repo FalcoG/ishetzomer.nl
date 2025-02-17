@@ -1,0 +1,16 @@
+{
+  "imports": {
+    "astronomy-engine": "npm:astronomy-engine@^2.1.19",
+    "lume/": "https://deno.land/x/lume@v2.5.1/"
+  },
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "build": "deno task lume",
+    "serve": "deno task lume -s"
+  },
+  "compilerOptions": {
+    "types": [
+      "lume/types.ts"
+    ]
+  }
+}
